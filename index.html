@@ -903,6 +903,54 @@
     100% { left: 150%; }
 }
 
+/* ==========================================================================
+           RODAPÉ DA LUMMININ - ASSINATURA DE ELITE (ADAPTADO)
+           ========================================================================== */
+        .footer-lumminin {
+            margin-top: 50px;
+            padding-bottom: 35px; /* Evita que o teclado ou barra do celular cortem o link */
+            text-align: center;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+        }
+
+        .link-lumminin {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px; /* Alinhamento horizontal perfeito entre o texto e a logo */
+            text-decoration: none;
+            font-size: 11px;
+            font-weight: 700;
+            color: rgba(14, 34, 28, 0.6); /* Cor de suporte integrada ao tema */
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            padding: 8px 16px;
+            border-radius: 30px;
+            background: rgba(14, 34, 28, 0.04); /* Capsule sutil de fundo */
+            border: 1px solid rgba(14, 34, 28, 0.08);
+            transition: all 0.2s ease;
+        }
+
+        /* Efeito de clique elástico no mobile */
+        .link-lumminin:active {
+            transform: scale(0.96);
+            background: rgba(14, 34, 28, 0.12);
+        }
+
+        /* Controle dimensional da logo laranja */
+        .logo-lumminin-img {
+            height: 15px; /* Altura exata para casar com a linha do texto */
+            width: auto;
+            object-fit: contain;
+            display: inline-block;
+            vertical-align: middle;
+            filter: drop-shadow(0 1px 2px rgba(0,0,0,0.05));
+        }
+
 </style>
 </head>
 <body>
@@ -1075,6 +1123,11 @@
         </section>
     </div>
 
+<footer class="footer-lumminin">
+            <a href="https://api.whatsapp.com/send?phone=5581983869030&text=Ol%C3%A1%20Fabiuu%21%20Vi%20o%20convite%20premium%20do%20Pyetro%20e%20achei%20fant%C3%A1stico.%20Gostaria%20de%20fazer%20um%20or%C3%A7amento%20de%20sistema%2Fidentidade%20visual%20com%20a%20Lumminin%21" target="_blank" class="link-lumminin">
+                <span>Desenvolvido por</span>
+<img src="logo_laranja.png" alt="Lumminin" class="logo-lumminin-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">            </a>
+        </footer>
     <script>
 // LÓGICA DO CRONÔMETRO (Contagem até 13 de Junho)
 function atualizarCronometro() {
